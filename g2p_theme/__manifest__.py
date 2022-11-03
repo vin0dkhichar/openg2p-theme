@@ -1,0 +1,17 @@
+{
+    "name": "OpenG2P Theme",
+    "category": "G2P",
+    "version": "15.0.0.0.1",
+    "sequence": 1,
+    "author": "OpenG2P",
+    "website": "https://github.com/OpenG2P/openg2p-theme",
+    "license": "Other OSI approved licence",
+    "depends": ["base", "web"],
+    "data": [],
+    "assets": {},
+    "demo": [],
+    "images": [],
+    "application": True,
+    "installable": True,
+    "auto_install": False,
+}
