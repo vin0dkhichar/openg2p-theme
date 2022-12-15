@@ -8,7 +8,13 @@
     "license": "Other OSI approved licence",
     "depends": ["base", "web"],
     "data": [],
-    "assets": {},
+    "assets": {
+        "web.assets_backend": [
+            "g2p_theme/static/src/scss/assets_menu.scss",
+            "g2p_theme/static/src/js/g2p_window_title.js",
+        ],
+        "web.assets_qweb": [],
+    },
     "demo": [],
     "images": [],
     "application": True,
