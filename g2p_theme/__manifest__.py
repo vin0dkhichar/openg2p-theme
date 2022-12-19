@@ -7,7 +7,7 @@
     "website": "https://github.com/OpenG2P/openg2p-theme",
     "license": "Other OSI approved licence",
     "depends": ["base", "web"],
-    "data": [],
+    "data": ["templates/g2p_login_page.xml"],
     "assets": {
         "web.assets_backend": [
             "g2p_theme/static/src/scss/assets_menu.scss",
