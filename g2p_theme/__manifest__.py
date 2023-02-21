@@ -1,12 +1,13 @@
 {
     "name": "OpenG2P Theme",
     "category": "G2P",
-    "version": "15.0.0.0.1",
+    "version": "15.0.1.1.0",
     "sequence": 1,
     "author": "OpenG2P",
     "website": "https://github.com/OpenG2P/openg2p-theme",
     "license": "Other OSI approved licence",
     "depends": ["base", "web"],
+    "development_status": "Alpha",
     "data": ["templates/g2p_login_page.xml"],
     "assets": {
         "web.assets_backend": [
