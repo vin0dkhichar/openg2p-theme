@@ -29,10 +29,17 @@ body{
 }
 
 .o_menu_sections{
-    background-image: url(https://static.wixstatic.com/media/aac209_866e4fe98ed44e1e8ad2436b684e7a11~mv2.png/v1/fill/w_205,h_73,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Open-G2P-on-Blue.png);
+    background-image: url('/g2p_theme/static/src/img/openg2p-logo-white-on-black.png');
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 70%;
+    background-size: 120px;
+}
+
+@media (min-width:840px) and (max-width: 980px){
+    .o_menu_sections{
+        background-position-x: 100% !important;
+    }
 }
 
 .o_list_button_add_program, .o_list_button_add_program:active{
