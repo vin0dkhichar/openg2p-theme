@@ -1,0 +1,168 @@
+.o_main_navbar{
+    background-color: #121111;
+}
+
+.o_MessagingMenu_counter{
+    background-color: #E27D21;
+}
+
+.o_notification_counter{
+    background-color: #E27D21 !important;
+}
+
+body{
+    font-family: Roboto;
+}
+
+.breadcrumb .o_back_button a{
+    color: #E27D21 !important;
+    font: normal normal medium 18px/24px Roboto;
+}
+
+.breadcrumb-item + .breadcrumb-item::before{
+    color: #202528;
+}
+
+.breadcrumb .active .text-muted{
+    font: normal normal medium 18px/24px Roboto;
+    color: #202528 !important;
+}
+
+.o_menu_sections{
+    background-image: url(https://static.wixstatic.com/media/aac209_866e4fe98ed44e1e8ad2436b684e7a11~mv2.png/v1/fill/w_205,h_73,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Open-G2P-on-Blue.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 70%;
+}
+
+.o_list_button_add_program, .o_list_button_add_program:active{
+    background: #E27D21 0% 0% no-repeat padding-box !important;
+    border-radius: 4px !important;
+    border: 1px solid #E27D21 !important;
+    opacity: 1 !important;
+    height: 31px !important;
+    color: #FFFFFF !important;
+    font: normal normal medium 14px/19px Roboto !important;
+}
+
+.o_list_button_add_program:focus{
+    box-shadow: none !important;
+}
+
+.o_list_button_add_program:focus-visible{
+    outline: none !important;
+}
+
+.o_form_buttons_view .o_form_button_edit, .o_form_button_save, .o_list_button_add{
+    background: #E27D21 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    border: 1px solid #E27D21;
+    opacity: 1;
+    width: 90px;
+    height: 31px;
+    color: #FFFFFF;
+    font: normal normal medium 14px/19px Roboto;
+}
+
+.o_form_buttons_view .o_form_button_create, .o_form_button_cancel{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E27D21;
+    border-radius: 4px;
+    opacity: 1;
+    width: 90px;
+    height: 31px;
+    color: #E27D21;
+    font: normal normal medium 14px/19px Roboto;
+}
+
+.o_form_buttons_view .o_form_button_edit:active, .o_form_button_save:active, .o_form_button_save:hover, .o_list_button_add:active, .o_list_button_add:hover{
+    background: #E27D21 0% 0% no-repeat padding-box !important;
+    border-radius: 4px !important;
+    border: 1px solid #E27D21 !important;
+    opacity: 1 !important;
+    width: 90px !important;
+    height: 31px !important;
+    color: #FFFFFF !important;
+    font: normal normal medium 14px/19px Roboto !important;
+}
+
+.o_form_buttons_view .o_form_button_create:active, .o_form_button_cancel:active, .o_form_button_cancel:hover{
+    background: #FFFFFF 0% 0% no-repeat padding-box !important;
+    border: 1px solid #E27D21 !important;
+    border-radius: 4px !important;
+    opacity: 1 !important;
+    width: 90px !important;
+    height: 31px !important;
+    color: #E27D21 !important;
+    font: normal normal medium 14px/19px Roboto !important;
+}
+
+.o_form_buttons_view .o_form_button_edit:focus, .o_form_button_save:focus, .o_list_button_add:focus{
+    box-shadow: none !important;
+}
+
+.o_form_buttons_view .o_form_button_create:focus, .o_form_button_cancel:focus{
+   box-shadow: none !important;
+}
+
+.o_form_buttons_view .o_form_button_edit:focus-visible, .o_form_button_save:focus-visible, .o_list_button_add:focus-visible{
+    outline: none !important;
+}
+
+.o_form_buttons_view .o_form_button_create:focus-visible, .o_form_button_cancel:focus-visible{
+   outline: none !important;
+}
+
+.o_cp_action_menus .dropdown-toggle{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E27D21;
+    border-radius: 4px;
+    opacity: 1;
+    color: #E27D21;
+    width: 90px;
+    height: 31px;  
+    padding-left: 16px;
+    font: normal normal medium 14px/19px Roboto;
+}
+
+.oe_stat_button .o_button_icon{
+    color: #E27D21 !important;
+}
+
+.oe_stat_button .o_stat_text{
+    font: normal normal medium 14px/19px Roboto;
+    color: #212529;
+}
+
+.oe_title .oe_read_only .o_field_char{
+    font: normal normal medium 26px/34px Roboto;
+    color: #212529;
+}
+
+.o_notebook_headers .nav-tabs .nav-item a{
+    font: normal normal medium 14px/19px Roboto;
+    color: #212529;
+}
+
+.o_notebook_headers .nav-item .active{
+    background: #E27D21 0% 0% no-repeat padding-box !important;
+    border: 2px solid #E27D21;
+    border-radius: 4px 4px 0px 0px;
+    color: #FFFFFF !important;
+}
+
+.o_notebook_headers .nav-tabs{
+    border-bottom-color: #E27D21;
+    border-bottom-width: 2px;
+}
+
+.o_form_sheet_bg .o_form_sheet{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 16px #0000001a;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.o_list_view .o_field_x2many_list_row_add a{
+    color:  #E27D21;
+}
