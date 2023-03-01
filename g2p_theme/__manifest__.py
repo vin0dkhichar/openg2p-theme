@@ -8,15 +8,12 @@
     "license": "Other OSI approved licence",
     "depends": ["base", "web"],
     "development_status": "Alpha",
-    "data": [
-        "templates/g2p_login_page.xml"
-    ],
+    "data": ["templates/g2p_login_page.xml"],
     "assets": {
         "web.assets_backend": [
             # "g2p_theme/static/src/scss/assets_menu.scss",
             "g2p_theme/static/src/js/g2p_window_title.js",
-            "g2p_theme/static/src/css/style.css"
-
+            "g2p_theme/static/src/css/style.css",
         ],
         "web.assets_qweb": [],
     },
