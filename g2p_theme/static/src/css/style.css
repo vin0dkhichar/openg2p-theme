@@ -14,7 +14,7 @@ body {
     font-family: Roboto;
 }
 
-.breadcrumb .o_back_button a {
+.breadcrumb .breadcrumb-item a {
     color: #e27d21 !important;
     font: normal normal medium 18px/24px Roboto;
 }
@@ -224,4 +224,14 @@ body {
 
 .o_field_invalid.o_form_label:not(:focus-within){
     color: #E27D21 !important;
+}
+
+.o_PartnerImStatusIcon_icon.o-online {
+    color: #E27D21;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after{
+    border-radius: 50%;
+    border-color: #E27D21;
+    background-color: #E27D21;
 }
