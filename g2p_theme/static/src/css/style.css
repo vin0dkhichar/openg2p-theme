@@ -32,7 +32,7 @@ body{
     background-image: url('/g2p_theme/static/src/img/openg2p-logo-white-on-black.png');
     background-repeat: no-repeat;
     background-position-y: center;
-    background-position-x: 70%;
+    background-position-x: 60%;
     background-size: 120px;
 }
 
@@ -40,6 +40,18 @@ body{
     .o_menu_sections{
         background-position-x: 100% !important;
     }
+}
+
+.btn-primary, .btn-primary:hover{
+    background: #E27D21 0% 0% no-repeat padding-box !important;
+    border-radius: 4px !important;
+    border: 1px solid #E27D21 !important;
+    color: #FFFFFF !important;
+    font: normal normal medium 14px/19px Roboto !important;
+}
+
+.btn-primary:focus{
+   box-shadow: none !important;
 }
 
 .o_list_button_add_program, .o_list_button_add_program:active{
@@ -60,7 +72,7 @@ body{
     outline: none !important;
 }
 
-.o_form_buttons_view .o_form_button_edit, .o_form_button_save, .o_list_button_add{
+.o_form_buttons_view .o_form_button_edit, .o_form_button_save, .o_list_button_add, .o_list_button_save{
     background: #E27D21 0% 0% no-repeat padding-box;
     border-radius: 4px;
     border: 1px solid #E27D21;
@@ -71,7 +83,7 @@ body{
     font: normal normal medium 14px/19px Roboto;
 }
 
-.o_form_buttons_view .o_form_button_create, .o_form_button_cancel{
+.o_form_buttons_view .o_form_button_create, .o_form_button_cancel, .o_list_button_discard{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #E27D21;
     border-radius: 4px;
@@ -82,7 +94,7 @@ body{
     font: normal normal medium 14px/19px Roboto;
 }
 
-.o_form_buttons_view .o_form_button_edit:active, .o_form_button_save:active, .o_form_button_save:hover, .o_list_button_add:active, .o_list_button_add:hover{
+.o_form_buttons_view .o_form_button_edit:active, .o_form_button_save:active, .o_form_button_save:hover, .o_list_button_add:active, .o_list_button_add:hover, .o_list_button_save:active, .o_list_button_save:hover{
     background: #E27D21 0% 0% no-repeat padding-box !important;
     border-radius: 4px !important;
     border: 1px solid #E27D21 !important;
@@ -93,7 +105,7 @@ body{
     font: normal normal medium 14px/19px Roboto !important;
 }
 
-.o_form_buttons_view .o_form_button_create:active, .o_form_button_cancel:active, .o_form_button_cancel:hover{
+.o_form_buttons_view .o_form_button_create:active, .o_form_button_cancel:active, .o_form_button_cancel:hover, .o_list_button_discard:hover, .o_list_button_discard:active{
     background: #FFFFFF 0% 0% no-repeat padding-box !important;
     border: 1px solid #E27D21 !important;
     border-radius: 4px !important;
@@ -104,35 +116,83 @@ body{
     font: normal normal medium 14px/19px Roboto !important;
 }
 
-.o_form_buttons_view .o_form_button_edit:focus, .o_form_button_save:focus, .o_list_button_add:focus{
+.o_form_buttons_view .o_form_button_edit:focus, .o_form_button_save:focus, .o_list_button_add:focus, .o_list_button_save:focus{
     box-shadow: none !important;
 }
 
-.o_form_buttons_view .o_form_button_create:focus, .o_form_button_cancel:focus{
+.o_form_buttons_view .o_form_button_create:focus, .o_form_button_cancel:focus, .o_list_button_discard:focus{
    box-shadow: none !important;
 }
 
-.o_form_buttons_view .o_form_button_edit:focus-visible, .o_form_button_save:focus-visible, .o_list_button_add:focus-visible{
+.o_form_buttons_view .o_form_button_edit:focus-visible, .o_form_button_save:focus-visible, .o_list_button_add:focus-visible, .o_list_button_save:focus-visible{
     outline: none !important;
 }
 
-.o_form_buttons_view .o_form_button_create:focus-visible, .o_form_button_cancel:focus-visible{
+.o_form_buttons_view .o_form_button_create:focus-visible, .o_form_button_cancel:focus-visible, .o_list_button_discard:focus-visible{
    outline: none !important;
 }
 
-.o_cp_action_menus .dropdown-toggle{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #E27D21;
-    border-radius: 4px;
-    opacity: 1;
-    color: #E27D21;
-    width: 90px;
-    height: 31px;  
-    padding-left: 16px;
-    font: normal normal medium 14px/19px Roboto;
+.oe_kanban_action_button, .oe_title .btn-primary{
+    background: #E27D21 0% 0% no-repeat padding-box !important;
+    border-radius: 4px !important;
+    border: 1px solid #E27D21 !important;
+}
+
+.oe_kanban_action_button:focus, .oe_title .btn-primary:focus{
+    box-shadow: none !important;
+}
+
+.oe_kanban_action_button:focus-visible, .oe_title .btn-primary:focus-visible{
+    outline: none !important;
+}
+
+.o_cp_action_menus .dropdown-toggle, .o_cp_action_menus .dropdown-toggle:active{
+    background: #FFFFFF 0% 0% no-repeat padding-box !important;
+    border: 1px solid #E27D21 !important;
+    border-radius: 4px !important;
+    opacity: 1 !important;
+    color: #E27D21 !important;
+    width: 90px !important;
+    height: 31px !important;  
+    padding-left: 16px !important;
+    font: normal normal medium 14px/19px Roboto !important;
+}
+
+.o_form_view .o_form_statusbar > .o_statusbar_status > .o_arrow_button.btn-primary.disabled{
+    background: #E27D21 0% 0% no-repeat padding-box !important;
+    color: #FFFFFF !important;
+}
+
+.o_form_view .o_form_statusbar > .o_statusbar_status > .o_arrow_button.btn-primary.disabled:after, .o_form_view .o_form_statusbar > .o_statusbar_status > .o_arrow_button.btn-primary.disabled:before{
+    border-left-color: #E27D21;
+}
+
+.o_domain_add_first_node_button{
+    background: #E27D21 0% 0% no-repeat padding-box !important;
+    border-radius: 4px !important;
+    border: 1px solid #E27D21 !important;
+    opacity: 1 !important;
+    color: #FFFFFF !important;
+    font: normal normal medium 14px/19px Roboto !important;
+}
+
+.o_domain_add_first_node_button:focus{
+    box-shadow: none !important;
+}
+
+.modal.o_technical_modal .modal-content .modal-footer footer .btn-secondary{
+    background: #FFFFFF 0% 0% no-repeat padding-box !important;
+    border: 1px solid #E27D21 !important;
+    border-radius: 4px !important;
+    color: #E27D21 !important;
+    font: normal normal medium 14px/19px Roboto !important;
 }
 
 .oe_stat_button .o_button_icon{
+    color: #E27D21 !important;
+}
+
+.o_debug_manager .dropdown-toggle{
     color: #E27D21 !important;
 }
 
@@ -156,11 +216,15 @@ body{
     border: 2px solid #E27D21;
     border-radius: 4px 4px 0px 0px;
     color: #FFFFFF !important;
+    border-bottom: 0px solid !important;
 }
 
 .o_notebook_headers .nav-tabs{
     border-bottom-color: #E27D21;
-    border-bottom-width: 2px;
+}
+
+.o_notebook_headers .nav-tabs .nav-link:hover{
+    border-color: #E27D21;
 }
 
 .o_form_sheet_bg .o_form_sheet{
@@ -172,4 +236,44 @@ body{
 
 .o_list_view .o_field_x2many_list_row_add a{
     color:  #E27D21;
+}
+
+.o_list_view .o_field_x2many_list_row_add a:active, .o_list_view .o_field_x2many_list_row_add a:focus{
+    color:  #E27D21 !important;
+}
+
+.o_list_view .o_field_x2many_list_row_add a:focus-visible{
+    outline: none !important;
+}
+
+.o_technical_modal .modal-footer .btn-primary, .o_technical_modal .modal-footer .btn-primary:active{
+    background: #E27D21 0% 0% no-repeat padding-box !important;
+    border: 2px solid #E27D21;
+    border-radius: 4px;
+    color: #FFFFFF !important;
+}
+
+.o_technical_modal .modal-footer .btn-primary:focus{
+    box-shadow: none !important;
+}
+
+.o_technical_modal .modal-footer .btn-primary:focus-visible{
+    outline: none !important;
+}
+
+.o_PartnerImStatusIcon_icon{
+    color: #E27D21 !important;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before{
+    background-color: #E27D21;
+    border-color: #E27D21;
+}
+
+.o_field_invalid{
+    --o-input-border-color: #E27D21;
+}
+
+.o_field_invalid.o_form_label:not(:focus-within){
+    color: #E27D21 !important;
 }
