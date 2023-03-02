@@ -218,6 +218,11 @@ body {
     margin-left: 10px;
 }
 
+.o_form_view .o_form_statusbar > .o_statusbar_status > .o_arrow_button.btn-primary.disabled{
+    border: 0px !important;
+    border-radius: 0px !important;
+}
+
 .o_form_view .o_form_statusbar > .o_statusbar_status > .o_arrow_button.btn-primary.disabled:after, .o_form_view .o_form_statusbar > .o_statusbar_status > .o_arrow_button.btn-primary.disabled:before{
     border-left-color: #E27D21;
 }
