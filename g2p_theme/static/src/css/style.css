@@ -46,7 +46,7 @@ body {
     background-size: 120px;
 }
 
-@media (min-width: 840px) and (max-width: 980px) {
+@media screen and (max-width: 980px) {
     .o_menu_sections {
         background-position-x: 100% !important;
     }
@@ -168,6 +168,10 @@ body {
     border-bottom-width: 2px;
 }
 
+.o_statusbar_buttons button {
+    margin-right: 8px !important;
+}
+
 .o_list_view .o_field_x2many_list_row_add a,
 .o_list_view .o_field_x2many_list_row_add a:focus {
     color: #e27d21 !important;
@@ -222,11 +226,21 @@ body {
     color: #212529 !important;
 }
 
-.btn-success {
-    background: #e27d21 0% 0% no-repeat padding-box;
-    border: 1px solid #e27d21;
+.btn-success,
+.btn-success:disabled,
+.btn-success:hover {
+    background: #e27d21 0% 0% no-repeat padding-box !important;
+    border: 1px solid #e27d21 !important;
     border-radius: 4px;
     opacity: 1;
+}
+
+.btn-success:focus {
+    box-shadow: none !important;
+}
+
+.o_horizontal_separator {
+    color: #e27d21 !important;
 }
 
 .o_badge_cell .o_field_badge {
