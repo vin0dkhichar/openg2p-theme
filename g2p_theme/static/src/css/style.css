@@ -2,16 +2,26 @@
     background-color: #121111;
 }
 
-.o_MessagingMenu_counter {
-    background-color: #e27d21;
+.o_menu_sections {
+    background-image: url("/g2p_theme/static/src/img/openg2p-logo-white-on-black.png");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 60%;
+    background-size: 120px;
+}
+
+@media (min-width: 840px) and (max-width: 980px) {
+    .o_menu_sections {
+        background-position-x: 100% !important;
+    }
 }
 
 .o_notification_counter {
     background-color: #e27d21 !important;
 }
 
-body {
-    font-family: Roboto;
+.o_MessagingMenu_counter {
+    background-color: #e27d21 !important;
 }
 
 .breadcrumb .breadcrumb-item a {
@@ -28,165 +38,62 @@ body {
     color: #202528 !important;
 }
 
-.o_menu_sections {
-    background-image: url("/g2p_theme/static/src/img/openg2p-logo-white-on-black.png");
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 60%;
-    background-size: 120px;
-}
-
-@media (min-width: 840px) and (max-width: 980px) {
-    .o_menu_sections {
-        background-position-x: 100% !important;
-    }
-}
-
-.btn-primary, .btn-primary:hover{
-    background: #E27D21 0% 0% no-repeat padding-box !important;
+.btn-primary,
+.btn-primary:hover {
+    background: #e27d21 0% 0% no-repeat padding-box !important;
     border-radius: 4px !important;
-    border: 1px solid #E27D21 !important;
-    color: #FFFFFF !important;
-    font: normal normal medium 14px/19px Roboto !important;
+    border: 1px solid #e27d21 !important;
+    color: #ffffff !important;
+    min-width: 90px;
+    height: 31px;
 }
 
-.btn-primary:focus{
-   box-shadow: none !important;
+.btn-primary:focus {
+    box-shadow: none !important;
 }
 
-.btn-secondary{
+.btn-secondary {
     margin-left: 10px;
 }
 
-.o_list_button_add_program,
-.o_list_button_add_program:active {
-    background: #e27d21 0% 0% no-repeat padding-box !important;
-    border-radius: 4px !important;
+.o_form_buttons_view .o_form_button_create,
+.o_form_buttons_view .o_form_button_create:active,
+.o_form_button_cancel,
+.o_form_button_cancel:active,
+.o_form_button_cancel:hover,
+.btn-warning,
+.o_technical_modal .modal-footer .btn-secondary {
+    background: #ffffff 0% 0% no-repeat padding-box !important;
     border: 1px solid #e27d21 !important;
-    opacity: 1 !important;
-    height: 31px !important;
-    color: #ffffff !important;
-    font: normal normal medium 14px/19px Roboto !important;
-}
-
-.o_list_button_add_program:focus {
-    box-shadow: none !important;
-}
-
-.o_list_button_add_program:focus-visible {
-    outline: none !important;
-}
-
-.o_form_buttons_view .o_form_button_edit, .o_form_button_save, .o_list_button_add{
-    background: #E27D21 0% 0% no-repeat padding-box;
-    border-radius: 4px;
-    border: 1px solid #e27d21;
-    opacity: 1;
-    width: 90px;
-    height: 31px;
-    color: #ffffff;
-    font: normal normal medium 14px/19px Roboto;
-}
-
-.o_form_buttons_view .o_form_button_create, .o_form_button_cancel{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #E27D21;
-    border-radius: 4px;
-    opacity: 1;
-    width: 90px;
-    height: 31px;
-    color: #e27d21;
-    font: normal normal medium 14px/19px Roboto;
-}
-
-.o_form_buttons_view .o_form_button_edit:active, .o_form_button_save:active, .o_form_button_save:hover, .o_list_button_add:active, .o_list_button_add:hover{
-    background: #E27D21 0% 0% no-repeat padding-box !important;
     border-radius: 4px !important;
-    border: 1px solid #e27d21 !important;
-    opacity: 1 !important;
-    width: 90px !important;
-    height: 31px !important;
-    color: #ffffff !important;
-    font: normal normal medium 14px/19px Roboto !important;
-}
-
-.o_form_buttons_view .o_form_button_create:active, .o_form_button_cancel:active, .o_form_button_cancel:hover{
-    background: #FFFFFF 0% 0% no-repeat padding-box !important;
-    border: 1px solid #E27D21 !important;
-    border-radius: 4px !important;
-    opacity: 1 !important;
-    width: 90px !important;
-    height: 31px !important;
+    min-width: 90px;
+    height: 31px;
     color: #e27d21 !important;
-    font: normal normal medium 14px/19px Roboto !important;
 }
 
-.o_form_buttons_view .o_form_button_edit:focus, .o_form_button_save:focus, .o_list_button_add:focus{
+.o_form_buttons_view .o_form_button_create:focus,
+.o_form_button_cancel:focus,
+.btn-warning:focus,
+.o_technical_modal .modal-footer .btn-secondary:focus {
     box-shadow: none !important;
 }
 
-.o_form_buttons_view .o_form_button_create:focus, .o_form_button_cancel:focus{
-   box-shadow: none !important;
-}
-
-.o_form_buttons_view .o_form_button_edit:focus-visible, .o_form_button_save:focus-visible, .o_list_button_add:focus-visible{
+.o_form_buttons_view .o_form_button_create:focus-visible,
+.o_form_button_cancel:focus-visible,
+.btn-warning:focus-visible,
+.o_technical_modal .modal-footer .btn-secondary:focus-visible {
     outline: none !important;
 }
 
-.o_form_buttons_view .o_form_button_create:focus-visible, .o_form_button_cancel:focus-visible{
-   outline: none !important;
-}
-
-.o_cp_action_menus .dropdown-toggle, .o_cp_action_menus .dropdown-toggle:active{
-    background: #FFFFFF 0% 0% no-repeat padding-box !important;
-    border: 1px solid #E27D21 !important;
+.o_cp_action_menus .dropdown-toggle,
+.o_cp_action_menus .dropdown-toggle:active {
+    background: #ffffff 0% 0% no-repeat padding-box !important;
+    border: 1px solid #e27d21 !important;
     border-radius: 4px !important;
-    opacity: 1 !important;
-    color: #E27D21 !important;
-    width: 90px !important;
-    height: 31px !important;  
+    color: #e27d21 !important;
+    min-width: 90px;
+    height: 31px;
     padding-left: 16px !important;
-    font: normal normal medium 14px/19px Roboto !important;
-}
-
-.oe_stat_button .o_button_icon {
-    color: #e27d21 !important;
-}
-
-.o_debug_manager .dropdown-toggle{
-    color: #E27D21 !important;
-}
-
-.oe_stat_button .o_stat_text {
-    font: normal normal medium 14px/19px Roboto;
-    color: #212529;
-}
-
-.oe_title .oe_read_only .o_field_char {
-    font: normal normal medium 26px/34px Roboto;
-    color: #212529;
-}
-
-.o_notebook_headers .nav-tabs .nav-item a {
-    font: normal normal medium 14px/19px Roboto;
-    color: #212529;
-    border-bottom: 1px;
-}
-
-.o_notebook_headers .nav-item .active {
-    background: #e27d21 0% 0% no-repeat padding-box !important;
-    border: 2px solid #e27d21;
-    border-radius: 4px 4px 0px 0px;
-    color: #FFFFFF !important;
-}
-
-.o_notebook_headers .nav-item a:hover {
-    border-color: #e27d21 !important;
-}
-
-.o_notebook_headers .nav-tabs{
-    border-bottom-color: #E27D21;
-    border-bottom-width: 2px;
 }
 
 .o_form_sheet_bg .o_form_sheet {
@@ -196,47 +103,113 @@ body {
     opacity: 1;
 }
 
-.o_list_view .o_field_x2many_list_row_add a, .o_list_view .o_field_x2many_list_row_add a:focus{
-    color: #E27D21 !important;
+.oe_stat_button .o_button_icon {
+    color: #e27d21 !important;
 }
 
-.o_list_view .o_list_table .o_field_x2many_list_row_add a:active{
-    color: #E27D21 !important;
+.oe_stat_button .o_stat_text {
+    color: #212529;
+}
+
+.o_notebook_headers .nav-tabs .nav-item a {
+    color: #212529;
+    border-bottom: 1px;
+}
+
+.o_notebook_headers .nav-item .active {
+    background: #e27d21 0% 0% no-repeat padding-box !important;
+    border: 2px solid #e27d21;
+    border-radius: 4px 4px 0px 0px;
+    color: #ffffff !important;
+}
+
+.o_notebook_headers .nav-item a:hover {
+    border-color: #e27d21 !important;
+}
+
+.o_notebook_headers .nav-tabs {
+    border-bottom-color: #e27d21;
+    border-bottom-width: 2px;
+}
+
+.o_list_view .o_field_x2many_list_row_add a,
+.o_list_view .o_field_x2many_list_row_add a:focus {
+    color: #e27d21 !important;
+}
+
+.o_list_view .o_list_table .o_field_x2many_list_row_add a:active {
+    color: #e27d21 !important;
 }
 
 .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    border-color: #E27D21;
-    background-color: #E27D21;
+    border-color: #e27d21;
+    background-color: #e27d21;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+    border-radius: 50%;
+    border-color: #e27d21;
+    background-color: #e27d21;
 }
 
 .o_field_invalid {
-    --o-input-border-color: #E27D21;
+    --o-input-border-color: #e27d21;
 }
 
-.o_list_export_xlsx{
-    margin-left: 10px;
+.o_required_modifier.o_input,
+.o_required_modifier .o_input {
+    background: #FFFAF5 0% 0% no-repeat padding-box !important;
+    box-shadow: 0px 3px 6px #6767671A;
+    border: 1px solid #E27D21;
+    border-radius: 6px;
+    opacity: 1;
 }
 
-.o_form_view .o_form_statusbar > .o_statusbar_status > .o_arrow_button.btn-primary.disabled{
+.o_field_invalid.o_form_label:not(:focus-within) {
+    color: #e27d21 !important;
+}
+
+.o_form_view .o_form_statusbar .o_statusbar_status .o_arrow_button.btn-primary.disabled {
     border: 0px !important;
     border-radius: 0px !important;
+    background: #FFEDDD !important;
+    color: #A35D1C !important;
 }
 
-.o_form_view .o_form_statusbar > .o_statusbar_status > .o_arrow_button.btn-primary.disabled:after, .o_form_view .o_form_statusbar > .o_statusbar_status > .o_arrow_button.btn-primary.disabled:before{
-    border-left-color: #E27D21;
+.o_form_view .o_form_statusbar .o_statusbar_status .o_arrow_button.btn-primary.disabled:after,
+.o_form_view .o_form_statusbar .o_statusbar_status .o_arrow_button.btn-primary.disabled:before {
+    border-left-color: #FFEDDD !important;
 }
 
-.o_field_invalid.o_form_label:not(:focus-within){
-    color: #E27D21 !important;
+.o_stat_info .o_stat_value{
+    color:#212529 !important;
+}
+
+.btn-success {
+    background: #E27D21 0% 0% no-repeat padding-box;
+    border: 1px solid #E27D21;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.o_badge_cell .o_field_badge{
+    border-radius: 4px;
+    opacity: 1;
+    min-width: 71px;
+    height: 19px;
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+.o_badge_cell .bg-primary-light{
+    color: #3E5463;
+}
+
+.o_badge_cell .bg-success-light{
+    color: #075E45;
 }
 
 .o_PartnerImStatusIcon_icon.o-online {
-    color: #E27D21;
-}
-
-.custom-radio .custom-control-input:checked ~ .custom-control-label::after{
-    border-radius: 50%;
-    border-color: #E27D21;
-    background-color: #E27D21;
+    color: #e27d21;
 }
