@@ -159,9 +159,9 @@
 
 .o_required_modifier.o_input,
 .o_required_modifier .o_input {
-    background: #FFFAF5 0% 0% no-repeat padding-box !important;
-    box-shadow: 0px 3px 6px #6767671A;
-    border: 1px solid #E27D21;
+    background: #fffaf5 0% 0% no-repeat padding-box !important;
+    box-shadow: 0px 3px 6px #6767671a;
+    border: 1px solid #e27d21;
     border-radius: 6px;
     opacity: 1;
 }
@@ -173,27 +173,27 @@
 .o_form_view .o_form_statusbar .o_statusbar_status .o_arrow_button.btn-primary.disabled {
     border: 0px !important;
     border-radius: 0px !important;
-    background: #FFEDDD !important;
-    color: #A35D1C !important;
+    background: #ffeddd !important;
+    color: #a35d1c !important;
 }
 
 .o_form_view .o_form_statusbar .o_statusbar_status .o_arrow_button.btn-primary.disabled:after,
 .o_form_view .o_form_statusbar .o_statusbar_status .o_arrow_button.btn-primary.disabled:before {
-    border-left-color: #FFEDDD !important;
+    border-left-color: #ffeddd !important;
 }
 
-.o_stat_info .o_stat_value{
-    color:#212529 !important;
+.o_stat_info .o_stat_value {
+    color: #212529 !important;
 }
 
 .btn-success {
-    background: #E27D21 0% 0% no-repeat padding-box;
-    border: 1px solid #E27D21;
+    background: #e27d21 0% 0% no-repeat padding-box;
+    border: 1px solid #e27d21;
     border-radius: 4px;
     opacity: 1;
 }
 
-.o_badge_cell .o_field_badge{
+.o_badge_cell .o_field_badge {
     border-radius: 4px;
     opacity: 1;
     min-width: 71px;
@@ -202,12 +202,12 @@
     letter-spacing: 0px;
 }
 
-.o_badge_cell .bg-primary-light{
-    color: #3E5463;
+.o_badge_cell .bg-primary-light {
+    color: #3e5463;
 }
 
-.o_badge_cell .bg-success-light{
-    color: #075E45;
+.o_badge_cell .bg-success-light {
+    color: #075e45;
 }
 
 .o_PartnerImStatusIcon_icon.o-online {
