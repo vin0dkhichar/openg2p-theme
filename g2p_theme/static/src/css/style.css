@@ -1,3 +1,39 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Regular.ttf") format("ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Bold.ttf") format("ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-BoldItalic.ttf") format("ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Italic.ttf") format("ttf");
+    font-style: italic;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Medium.ttf") format("ttf");
+    font-style: medium;
+    font-weight: 500;
+}
+
+body {
+    font-family: Roboto;
+}
+
 .o_main_navbar {
     background-color: #121111;
 }
