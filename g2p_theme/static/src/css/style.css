@@ -193,6 +193,11 @@ body {
     background-color: #e27d21;
 }
 
+.o_quick_editable span,
+.o_quick_editable a {
+    color: #e27d21 !important;
+}
+
 .o_field_invalid {
     --o-input-border-color: #e27d21;
 }
@@ -260,6 +265,10 @@ body {
     color: #075e45;
 }
 
-.o_PartnerImStatusIcon_icon.o-online {
-    color: #e27d21;
+.o_PartnerImStatusIcon_icon.o-online,
+.o_ChatterTopbar_button,
+.o_ChatterTopbar_button:hover,
+.o_FollowerListMenu_buttonFollowers,
+.o_external_button {
+    color: #e27d21 !important;
 }
