@@ -193,7 +193,8 @@ body {
     background-color: #e27d21;
 }
 
-.o_quick_editable a {
+.o_quick_editable a,
+.o_quick_editable > span {
     color: #e27d21 !important;
 }
 
@@ -230,11 +231,16 @@ body {
     color: #212529 !important;
 }
 
-.btn-success,
-.btn-success:disabled,
-.btn-success:hover {
-    background: #e27d21 0% 0% no-repeat padding-box !important;
-    border: 1px solid #e27d21 !important;
+.btn-success {
+    background: green !important;
+    border: 1px solid green !important;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.btn-success:disabled {
+    background: red 0% 0% no-repeat padding-box !important;
+    border: 1px solid red !important;
     border-radius: 4px;
     opacity: 1;
 }
@@ -256,12 +262,14 @@ body {
     letter-spacing: 0px;
 }
 
-.o_badge_cell .bg-primary-light {
+.bg-primary-light {
     color: #3e5463;
+    background-color: #dce3e8 !important;
 }
 
-.o_badge_cell .bg-success-light {
+.bg-success-light {
     color: #075e45;
+    background-color: #c7ebd1 !important;
 }
 
 .o_PartnerImStatusIcon_icon.o-online,
@@ -270,4 +278,32 @@ body {
 .o_FollowerListMenu_buttonFollowers,
 .o_external_button {
     color: #e27d21 !important;
+}
+
+.o_notification {
+    border-radius: 6px !important;
+}
+
+.o_notification_manager .o_notification .o_notification_body {
+    color: white !important;
+    background: #66ad5a !important;
+    padding-left: 20px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+}
+
+.bg-success .o_notification_body {
+    background: #66ad5a !important;
+}
+
+.o_notification_close,
+.o_notification_close:hover {
+    color: #ffffff !important;
+    opacity: 1;
+    font-weight: 100;
+    text-shadow: none;
+}
+
+.o_notification_close:focus {
+    outline: none;
 }
