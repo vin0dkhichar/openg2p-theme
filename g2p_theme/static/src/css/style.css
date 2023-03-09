@@ -76,6 +76,25 @@ body {
 
 .btn-primary,
 .btn-primary:hover {
+    color: #fff;
+    background-color: #2a477a;
+    border-color: #2a477a;
+}
+
+.btn-primary:focus {
+    box-shadow: none !important;
+}
+
+.o_list_button_add,
+.o_form_button_save,
+.o_form_button_edit,
+.o_list_button_save,
+.o_list_button_add_program,
+.o_list_button_add:hover,
+.o_form_button_save:hover,
+.o_form_button_edit:hover,
+.o_list_button_save:hover,
+.o_list_button_add_program:hover {
     background: #e27d21 0% 0% no-repeat padding-box !important;
     border-radius: 4px !important;
     border: 1px solid #e27d21 !important;
@@ -84,7 +103,11 @@ body {
     height: 31px;
 }
 
-.btn-primary:focus {
+.o_list_button_add:focus,
+.o_form_button_save:focus,
+.o_form_button_edit:focus,
+.o_list_button_save:focus,
+.o_list_button_add_program:focus {
     box-shadow: none !important;
 }
 
@@ -95,10 +118,10 @@ body {
 .o_form_buttons_view .o_form_button_create,
 .o_form_buttons_view .o_form_button_create:active,
 .o_form_button_cancel,
+.o_list_button_discard,
+.o_list_button_discard:hover,
 .o_form_button_cancel:active,
-.o_form_button_cancel:hover,
-.btn-warning,
-.o_technical_modal .modal-footer .btn-secondary {
+.o_form_button_cancel:hover {
     background: #ffffff 0% 0% no-repeat padding-box !important;
     border: 1px solid #e27d21 !important;
     border-radius: 4px !important;
@@ -110,6 +133,7 @@ body {
 .o_form_buttons_view .o_form_button_create:focus,
 .o_form_button_cancel:focus,
 .btn-warning:focus,
+.o_list_button_discard:focus,
 .o_technical_modal .modal-footer .btn-secondary:focus {
     box-shadow: none !important;
 }
@@ -140,7 +164,7 @@ body {
 }
 
 .oe_stat_button .o_button_icon {
-    color: #e27d21 !important;
+    color: #2a477a !important;
 }
 
 .oe_stat_button .o_stat_text {
@@ -153,23 +177,30 @@ body {
 }
 
 .o_notebook_headers .nav-item .active {
-    background: #e27d21 0% 0% no-repeat padding-box !important;
-    border: 2px solid #e27d21;
+    background: #2a477a 0% 0% no-repeat padding-box !important;
+    border: 2px solid #2a477a;
     border-radius: 4px 4px 0px 0px;
     color: #ffffff !important;
 }
 
 .o_notebook_headers .nav-item a:hover {
-    border-color: #e27d21 !important;
+    border-color: #2a477a !important;
 }
 
 .o_notebook_headers .nav-tabs {
-    border-bottom-color: #e27d21;
-    border-bottom-width: 2px;
+    border-bottom-color: #2a477a;
+    border-bottom-width: 3px;
 }
 
 .o_statusbar_buttons button {
     margin-right: 8px !important;
+}
+
+.o_statusbar_buttons .btn-success {
+    background: #28a745 !important;
+    border: 1px solid #28a745 !important;
+    border-radius: 4px !important;
+    min-width: 90px;
 }
 
 .o_list_view .o_field_x2many_list_row_add a,
@@ -183,14 +214,14 @@ body {
 
 .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    border-color: #e27d21;
-    background-color: #e27d21;
+    border-color: #2a477a;
+    background-color: #2a477a;
 }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
     border-radius: 50%;
-    border-color: #e27d21;
-    background-color: #e27d21;
+    border-color: #2a477a;
+    background-color: #2a477a;
 }
 
 .o_quick_editable a,
@@ -198,33 +229,34 @@ body {
     color: #e27d21 !important;
 }
 
-.o_field_invalid {
-    --o-input-border-color: #e27d21;
+.o_field_invalid,
+.o_required_modifier {
+    --o-input-border-color: #2a477a;
 }
 
 .o_required_modifier.o_input,
 .o_required_modifier .o_input {
-    background: #fffaf5 0% 0% no-repeat padding-box !important;
-    box-shadow: 0px 3px 6px #6767671a;
-    border: 1px solid #e27d21;
+    background: #f5f9ff 0% 0% no-repeat padding-box !important;
+    box-shadow: 0px 3px 6px #6767671a !important;
+    border: 1px solid #2a477a !important;
     border-radius: 6px;
     opacity: 1;
 }
 
 .o_field_invalid.o_form_label:not(:focus-within) {
-    color: #e27d21 !important;
+    color: #2a477a !important;
 }
 
 .o_form_view .o_form_statusbar .o_statusbar_status .o_arrow_button.btn-primary.disabled {
     border: 0px !important;
     border-radius: 0px !important;
-    background: #ffeddd !important;
-    color: #a35d1c !important;
+    background: #dfe9f8 !important;
+    color: #2a477a !important;
 }
 
 .o_form_view .o_form_statusbar .o_statusbar_status .o_arrow_button.btn-primary.disabled:after,
 .o_form_view .o_form_statusbar .o_statusbar_status .o_arrow_button.btn-primary.disabled:before {
-    border-left-color: #ffeddd !important;
+    border-left-color: #dfe9f8 !important;
 }
 
 .o_stat_info .o_stat_value {
@@ -232,15 +264,20 @@ body {
 }
 
 .btn-success {
-    background: green !important;
-    border: 1px solid green !important;
+    background: #2a477a !important;
+    border: 1px solid #2a477a !important;
     border-radius: 4px;
     opacity: 1;
 }
 
+.btn-primary:disabled {
+    background: #bcbcbc 0% 0% no-repeat padding-box !important;
+    border: 1px solid #bcbcbc !important;
+}
+
 .btn-success:disabled {
-    background: red 0% 0% no-repeat padding-box !important;
-    border: 1px solid red !important;
+    background: #bcbcbc 0% 0% no-repeat padding-box !important;
+    border: 1px solid #bcbcbc !important;
     border-radius: 4px;
     opacity: 1;
 }
@@ -250,7 +287,7 @@ body {
 }
 
 .o_horizontal_separator {
-    color: #e27d21 !important;
+    color: #2a477a !important;
 }
 
 .o_badge_cell .o_field_badge {
@@ -277,7 +314,7 @@ body {
 .o_ChatterTopbar_button:hover,
 .o_FollowerListMenu_buttonFollowers,
 .o_external_button {
-    color: #e27d21 !important;
+    color: #2a477a !important;
 }
 
 .o_notification {
@@ -286,14 +323,22 @@ body {
 
 .o_notification_manager .o_notification .o_notification_body {
     color: white !important;
-    background: #66ad5a !important;
     padding-left: 20px;
     padding-top: 14px;
     padding-bottom: 15px;
 }
 
-.bg-success .o_notification_body {
+.o_notification_manager .bg-success .o_notification_body,
+.o_notification_manager .bg-info .o_notification_body {
     background: #66ad5a !important;
+}
+
+.o_notification_manager .bg-danger .o_notification_body {
+    background: #de514c !important;
+}
+
+.o_notification_manager .bg-warning .o_notification_body {
+    background: #ed9834 !important;
 }
 
 .o_notification_close,
@@ -306,4 +351,71 @@ body {
 
 .o_notification_close:focus {
     outline: none;
+}
+
+.o_search_panel .o_search_panel_category .o_search_panel_section_icon {
+    color: #2a477a;
+}
+
+.o_field_number .o_input {
+    border: none !important;
+}
+
+.o_field_selector_popover_header,
+.o_field_selector_popover_footer,
+.o_field_selector_popover_header .o_field_selector_popover_option:hover {
+    background: #2a477a !important;
+}
+
+.o_form_view span.o_field_translate {
+    display: none;
+}
+
+.btn-danger,
+.btn-danger:hover {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    border-radius: 4px !important;
+    min-width: 90px;
+}
+
+.btn-danger:focus {
+    box-shadow: none !important;
+}
+
+.o_inner_group .o_field_number span {
+    color: #1f1f1f !important;
+}
+
+.o_domain_selector .o_domain_add_first_node_button {
+    background: #2a477a 0% 0% no-repeat padding-box !important;
+    border-radius: 4px !important;
+    border: 1px solid #2a477a !important;
+}
+
+.o_technical_modal .modal-footer .btn-secondary {
+    background: #ffffff 0% 0% no-repeat padding-box !important;
+    border: 1px solid #2a477a !important;
+    border-radius: 4px !important;
+    min-width: 90px;
+    height: 31px;
+    color: #2a477a !important;
+}
+
+.btn-warning {
+    background: #ffffff 0% 0% no-repeat padding-box !important;
+    border: 1px solid #2a477a !important;
+    border-radius: 4px !important;
+    min-width: 90px;
+    color: #2a477a !important;
+}
+
+.modal-footer .btn-primary {
+    background: #2a477a 0% 0% no-repeat padding-box !important;
+    border: 1px solid #2a477a !important;
+    border-radius: 4px !important;
+    min-width: 90px;
+    height: 31px;
+    color: #ffffff !important;
 }
