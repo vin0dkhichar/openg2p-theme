@@ -7,7 +7,10 @@ from odoo.modules.module import get_resource_path
 class ResCompany(models.Model):
     _inherit = "res.company"
 
-    def get_g2p_favicon(self):
-        img_path = get_resource_path("g2p_theme", "static/img/favicon.png")
+    def get_g2p_favicon(self, img_path_module="", img_path_rel=""):
+        img_path = get_resource_path(
+            img_path_module if img_path_module else "g2p_theme",
+            img_path_rel if img_path_rel else "static/img/favicon.png",
+        )
         with tools.file_open(img_path, "rb") as f:
             return base64.b64encode(f.read())
