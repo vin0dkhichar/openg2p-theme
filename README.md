@@ -1,6 +1,6 @@
 
 <!-- /!\ Non OCA Context : Set here the badge of your runbot / runboat instance. -->
-[![Build Status](https://github.com/OpenG2P/openg2p-theme/actions/workflows/test.yml/badge.svg?branch=15.0-1.1.0)](https://github.com/OpenG2P/openg2p-theme/actions/workflows/test.yml?query=branch%3A15.0-1.1.0)
+[![Build Status](https://github.com/OpenG2P/openg2p-theme/actions/workflows/test.yml/badge.svg?branch=15.0-develop)](https://github.com/OpenG2P/openg2p-theme/actions/workflows/test.yml?query=branch%3A15.0-develop)
 <!-- /!\ Non OCA Context : Set here the badge of your translation instance. -->
 
 <!-- /!\ do not modify above this line -->
@@ -19,7 +19,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[g2p_theme](g2p_theme/) | 15.0.1.1.0 |  | OpenG2P Theme
+[g2p_theme](g2p_theme/) | 15.0.1.2.0 |  | OpenG2P Theme
 
 [//]: # (end addons)
 
