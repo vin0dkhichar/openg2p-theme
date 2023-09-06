@@ -6,9 +6,13 @@
     "author": "OpenG2P",
     "website": "https://openg2p.org",
     "license": "Other OSI approved licence",
-    "depends": ["base", "web"],
+    "depends": ["base", "web", "auth_signup"],
     "development_status": "Alpha",
-    "data": ["data/res_company_data.xml", "templates/g2p_login_page.xml"],
+    "data": [
+        "data/res_company_data.xml",
+        "templates/g2p_login_page.xml",
+        "templates/g2p_reset_password.xml",
+    ],
     "assets": {
         "web.assets_backend": [
             # "g2p_theme/static/src/scss/assets_menu.scss",

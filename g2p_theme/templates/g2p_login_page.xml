@@ -7,6 +7,13 @@
         <xpath expr="//input[@name='password']" position="attributes">
 			<attribute name="placeholder" />
 		</xpath>
+		<xpath expr="//form" position="before">
+            <t t-set="no_header" t-value="True" />
+            <t t-set="no_footer" t-value="True" />
+        </xpath>
+		<xpath expr="//label[@for='login']" position="replace">
+			<label for="name">Email / Username</label>
+		</xpath>
     </template>
     <template id="login_layout" inherit_id="web.login_layout" name="G2P Login Layout">
    		<xpath
@@ -17,4 +24,13 @@
    			<attribute name="style" />
    		</xpath>
    	</template>
+
+	<template id="g2ptheme_login" inherit_id="auth_signup.login" name="Sign up - Reset Password">
+		<div class="justify-content-between mt-2 d-flex small" position="replace">
+			<div class="justify-content-between mt-2 d-flex small">
+				<a t-if="reset_password_enabled" t-attf-href="/web/reset_password?{{ keep_query() }}">Reset Password</a>
+			</div>
+		</div>
+	</template>
+
 </odoo>
