@@ -19,6 +19,9 @@
             "g2p_theme/static/src/js/g2p_window_title.js",
             "g2p_theme/static/src/css/style.css",
         ],
+        "web.assets_frontend": [
+            "g2p_theme/static/src/scss/new_login_page.scss",
+        ],
         "web.assets_qweb": [],
     },
     "demo": [],
