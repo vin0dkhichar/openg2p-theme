@@ -8,9 +8,9 @@ main:has(.g2p_login) {
     opacity: 1;
 }
 
-.g2p_login .oe_login_form,
-.oe_signup_form,
-.oe_reset_password_form {
+.g2p_login .oe_login_form:not(.ssp-signup-body),
+.g2p_login .oe_signup_form:not(.ssp-signup-body),
+.g2p_login .oe_reset_password_form:not(.ssp-signup-body) {
     max-width: 444px !important;
     max-height: 486px;
     position: relative;
