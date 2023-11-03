@@ -8,11 +8,11 @@ main:has(.g2p_login) {
     opacity: 1;
 }
 
-.g2p_login .oe_login_form,
-.oe_signup_form,
-.oe_reset_password_form {
+.g2p_login .oe_login_form:not(.ssp-signup-body),
+.g2p_login .oe_signup_form:not(.ssp-signup-body),
+.g2p_login .oe_reset_password_form:not(.ssp-signup-body) {
     max-width: 444px !important;
-    max-height: 486px;
+    // max-height: 486px;
     position: relative;
     margin: 50px auto;
     top: 100px;
@@ -99,9 +99,9 @@ main:has(.g2p_login) {
     margin: 30px 0 30px;
 }
 
-.g2p_login .oe_reset_password_form {
-    height: 400px !important;
-}
+// .g2p_login .oe_reset_password_form {
+//     height: 400px !important;
+// }
 .g2p_login .reset-password,
 .g2p_login .reset-password a {
     color: #e0711a;
@@ -142,12 +142,12 @@ main:has(.g2p_login) {
 
 /* Responsive styles for smaller screens */
 @media screen and (max-width: 768px) {
-    .g2p_login .alert-danger {
+    .g2p_login:not(.ssp-signup-body) .alert-danger {
         display: block;
     }
 }
 @media screen and (min-width: 769px) {
-    .g2p_login .alert-danger {
+    .g2p_login:not(.ssp-signup-body) .alert-danger {
         display: block;
     }
 }
