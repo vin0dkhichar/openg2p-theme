@@ -149,8 +149,9 @@ body {
 .o_technical_modal .modal-footer .btn-secondary:focus {
     box-shadow: none !important;
 }
-.modal-content , main {
-    overflow:auto !important;
+.modal-content,
+main {
+    overflow: auto !important;
 }
 .o_form_buttons_view .o_form_button_create:focus-visible,
 .o_form_button_cancel:focus-visible,
