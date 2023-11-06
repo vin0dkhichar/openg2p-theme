@@ -434,3 +434,7 @@ main {
     height: 31px;
     color: #ffffff !important;
 }
+
+.info-message {
+    color: #ed9834;
+}
