@@ -6,7 +6,7 @@
     "author": "OpenG2P",
     "website": "https://openg2p.org",
     "license": "Other OSI approved licence",
-    "depends": ["base", "web", "auth_signup"],
+    "depends": ["base", "web", "auth_signup", "website"],
     "development_status": "Alpha",
     "data": [
         "data/res_company_data.xml",
