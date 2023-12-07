@@ -15,7 +15,7 @@ main:has(.g2p_login) {
     max-height: 486px;
     position: relative;
     margin: 50px auto;
-    top: 100px;
+    top: -190%;
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 15px #0000000d;
     border-radius: 20px;
@@ -128,22 +128,27 @@ main:has(.g2p_login) {
     opacity: 1;
 }
 
-.g2p_login .g2p-background {
+.oe_website_login_container {
     /* Layout Properties */
     position: absolute;
-    top: 312px;
-    left: 227px;
+    top: 50%;
+    left: 50%;
     width: 912px;
     height: 120px;
     /* UI Properties */
     background: transparent url("/g2p_theme/static/src/img/57485.png") 0% 0% no-repeat padding-box;
     opacity: 1;
+    transform: translate(-50%, -50%);
 }
 
 /* Responsive styles for smaller screens */
 @media screen and (max-width: 768px) {
     .g2p_login .alert-danger {
         display: block;
+    }
+
+    .oe_website_login_container {
+        width: 80%;
     }
 }
 @media screen and (min-width: 769px) {
