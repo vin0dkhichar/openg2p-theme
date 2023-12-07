@@ -35,7 +35,6 @@
 			<attribute name="placeholder">Enter password</attribute>
 		</xpath>
 		<xpath expr="//form" position="before">
-			<div class="g2p-background" />
 			<xpath expr="//p[@class='alert alert-success']" position="move" />
 			<xpath expr="//p[@class='alert alert-danger']" position="move" />
 		</xpath>
