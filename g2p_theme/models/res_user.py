@@ -1,4 +1,10 @@
-from odoo import _, models
+import logging
+
+from odoo import SUPERUSER_ID, _, api, models
+from odoo.exceptions import AccessDenied
+from odoo.http import request
+
+_logger = logging.getLogger(__name__)
 
 
 class ResUser(models.Model):
@@ -16,3 +22,16 @@ class ResUser(models.Model):
                 _("Incorrect email. Please enter the registered email address.")
             )
         return users.action_reset_password()
+
+    @classmethod
+    def _login(cls, db, login, password, user_agent_env):
+        # Self-service provider access denied into openg2p
+        user_id = super()._login(db, login, password, user_agent_env)
+        if request and request.httprequest.path.startswith("/web/login"):
+            with cls.pool.cursor() as cr:
+                self = api.Environment(cr, SUPERUSER_ID, {})[cls._name]
+                user = self.sudo().search([("login", "=", login)])
+                if user and user.partner_id.is_registrant:
+                    raise AccessDenied()
+
+        return user_id
