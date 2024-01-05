@@ -60,7 +60,7 @@ main:has(.g2p_login) {
 }
 
 .g2p_login .alert-danger {
-    top: 102px;
+    top: -200px;
     max-height: 200px;
     left: 50%; /* Center the element horizontally */
     transform: translateX(-50%); /* Center horizontally */
