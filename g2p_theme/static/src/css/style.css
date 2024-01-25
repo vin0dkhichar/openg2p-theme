@@ -35,7 +35,12 @@ body {
 }
 
 .o_main_navbar {
-    background-color: #121111;
+    background-color: #121111 !important;
+}
+
+.o_main_navbar .o_menu_sections .o_nav_entry,
+.o_main_navbar .o_menu_sections .dropdown-toggle {
+    background-color: #121111 !important;
 }
 
 .o_menu_sections {

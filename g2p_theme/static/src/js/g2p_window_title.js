@@ -1,11 +1,12 @@
-/** @odoo-module **/
+// /** @odoo-module **/
 
-import {WebClient} from "@web/webclient/webclient";
-import {patch} from "@web/core/utils/patch";
+// import { patch } from "@web/core/utils/patch";
+// import { WebClient } from "@web/webclient/webclient";
 
-patch(WebClient.prototype, "OpenG2P Window Title", {
-    setup() {
-        this._super();
-        this.title.setParts({zopenerp: "OpenG2P"});
-    },
-});
+// patch(WebClient.prototype, {
+//     setup() {
+//         var self = this;
+//         self._super.apply(this, arguments);
+//         this.title.setParts({zopenerp: "OpenG2P"});
+//     },
+// });
