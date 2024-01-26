@@ -19,15 +19,16 @@
 		<xpath expr="//label[@for='login']" position="replace">
 			<label for="name">Email / Username</label>
 		</xpath>
-		<div class="form-group field-db" position="before">
-			<div t-attf-class="text-center pb-3 {{'mb-3' if form_small else 'mb-4'}}">
-				<img
+		<div class="mb-3" t-if="databases and len(databases) &gt; 1" position="before">
+			  <div t-attf-class="text-center pb-3 {{'mb-3' if form_small else 'mb-4'}}">
+		        <img
                     t-attf-src="/web/binary/company_logo{{ '?dbname='+db if db else '' }}"
                     alt="Logo"
                     style="max-height:120px; max-width: 100%; width:auto"
                 />
-			</div>
-		</div>
+		    </div>
+        </div>
+
 		<xpath expr="//input[@name='login']" position="attributes">
 			<attribute name="placeholder">Enter email address</attribute>
 		</xpath>
