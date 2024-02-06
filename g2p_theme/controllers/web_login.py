@@ -1,7 +1,7 @@
 from odoo import http
 from odoo.tools.translate import _
 
-from odoo.addons.web.controllers.main import Home
+from odoo.addons.web.controllers.home import Home
 
 
 class WebLoginHome(Home):
