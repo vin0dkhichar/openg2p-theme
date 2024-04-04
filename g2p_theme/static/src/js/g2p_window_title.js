@@ -1,7 +1,6 @@
 /** @odoo-module **/
-
-import {patch} from "@web/core/utils/patch";
 import {WebClient} from "@web/webclient/webclient";
+import {patch} from "@web/core/utils/patch";
 
 patch(WebClient.prototype, {
     setup() {
